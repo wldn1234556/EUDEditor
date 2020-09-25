@@ -579,7 +579,7 @@ Namespace ProjectSet
                     Dim STRpara() As Byte
                     mem.Position = SearchCHK("STR ", buffer)
 
-                    size = binary.ReadUInt32 '문자열 수
+                    size = binary.ReadUInt32 '65535
                     STRpara = binary.ReadBytes(size)
                     stream.Close()
                     binary.Close()
